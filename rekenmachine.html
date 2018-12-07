@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rekenmachine</title>
+  </head>
+  <body>
+    <script>
+      var min = function(a, b){
+        return a-b;
+      }
+      var deling = function(a, b){
+        return a/b;
+      }
+      var maal = function(a, b){
+        return a*b;
+      }
+      var percentage = function(a, b){
+        return (b/100)*a
+      }
+      var snelheid = function(afstandInKm, tijdInUur){
+        return "Je snelheid bedraagt " + afstandInKm/tijdInUur + " km/u";
+      }
+      var result = snelheid(75,0.75);
+      console.log(result)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Non-player character</title>
+  </head>
+  <body>
+    <script>
+
+    //    console.log(character.item_to_give)
+    //    var randomItem = character.item_to_give[Math.floor(Math.random()*character.item_to_give.length)];
+    //    console.log(randomItem)
+    //
+    //
+    //    function Weapon(title, physic, magic, minLevel, available) {
+    //     this.title = title;
+    //     this.physic = physic;
+    //     this.magic = magic;
+    //     this.minLevel = minLevel;
+    //     this.available = available;
+    //       };
+    //
+    //     let zwaard = new Weapon("zwaard", 3, 2, 10, true);
+    //     let bijl = new Weapon("bijl", 5, 11, 15, true);
+    //     let scepter = new Weapon("scepter", 9, 13, 20, false);
+    //     let knife = new Weapon("knife", 1, 0, 1, true);
+    //
+    //     let weapons = [zwaard, bijl, scepter, knife];
+    //
+    //     for (var i = 0; i < weapons.length; i++) {
+    //       console.log(weapons[i].physic);
+    //     }
+    //
+    //     function beschikbaar(weapons) {
+    //     for (var i = 0; i < weapons.length; i++) {
+    //       if(weapons [i].available===true){
+    //         console.log(weapons[i].title + " is beschikbaar!!!");
+    //       }
+    //     }
+    //   }
+    //   beschikbaar(weapons);
+    //
+    //   function minimumlevel10(weapons) {
+    //   for (var i = 0; i < weapons.length; i++) {
+    //     if(weapons [i].minLevel >=10){
+    //       console.log(weapons[i].title + " heeft level " +weapons[i].minLevel);
+    //     }
+    //   }
+    // }
+    // minimumlevel10(weapons);
+
+
+    let character = {
+     name : "Hans",
+     level : 99,
+     life: 3,
+     weapon: "",
+     attack: function() {
+       console.log(character.name + " valt aan met wapen " + weapon.name + " en de schade is " + character.level * weapon.damage)
+     }
+   }
+
+  let weapon = {
+    name : "chopsticks",
+    damage : 100
+  }
+
+character.attack()
+
+    </script>
+  </body>
+</html>
